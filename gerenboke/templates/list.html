@@ -1,0 +1,37 @@
+{% extends 'base_main.html' %}
+{% block content %}
+<article>
+  <aside class="l_box">
+ <div class="search">
+      <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+     <div class="tuijian">
+      <h2>点击排行</h2>
+      <ul>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+        <li><a href="/">此处为文章标题</a></li>
+      </ul>
+    </div>
+  </aside>
+  <main class="r_box">
+    <li><i><a href="/"><img src=""></a></i>
+      <h3><a href="/">正在学习写博客</a></h3>
+      <p>写博客啊写博客，写博客啊写博客</p>
+    </li>
+    <div class="pagelist"><a class="allpage"><b>10</b></a>&nbsp;&nbsp;<a href="#" class="curPage">1</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">2</a>&nbsp;&nbsp;<a href="#" onclick="page(3)">3</a>&nbsp;&nbsp;<a href="#" onclick="page(4)">4</a>&nbsp;&nbsp;<a href="#" onclick="page(5)">5</a>&nbsp;&nbsp;<a href="#" onclick="page(6)">6</a>&nbsp;&nbsp;<a href="#" onclick="page(7)">7</a>&nbsp;&nbsp;<a href="#" onclick="page(8)">8</a>&nbsp;&nbsp;<a href="#" onclick="page(9)">9</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">下一页</a></div>
+  </main>
+</article>
+<a href="#" class="cd-top">Top</a>
+{% endblock %}

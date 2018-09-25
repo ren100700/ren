@@ -1,0 +1,64 @@
+{% extends 'base_main.html' %}
+{% block content %}
+    <article>
+      <div class="picbox">
+        <ul>
+          <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>1</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+           <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>2</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+        </ul>
+        <ul>
+            <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>3</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+              <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>4</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+        </ul>
+        <ul>
+              <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>5</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+              <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>6</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+        </ul>
+        <ul>
+           <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>7</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+              <li data-scroll-reveal="enter bottom over 1s" ><a href="/"><i><img src=""></i>
+            <div class="picinfo">
+              <h3>8</h3>
+              <span>帅的人就是帅</span> </div>
+            </a></li>
+        </ul>
+      </div>
+      <div class="pagelist"><a class="allpage"><b>10</b></a>&nbsp;&nbsp;<a href="#" class="curPage">1</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">2</a>&nbsp;&nbsp;<a href="#" onclick="page(3)">3</a>&nbsp;&nbsp;<a href="#" onclick="page(4)">4</a>&nbsp;&nbsp;<a href="#" onclick="page(5)">5</a>&nbsp;&nbsp;<a href="#" onclick="page(6)">6</a>&nbsp;&nbsp;<a href="#" onclick="page(7)">7</a>&nbsp;&nbsp;<a href="#" onclick="page(8)">8</a>&nbsp;&nbsp;<a href="#" onclick="page(9)">9</a>&nbsp;&nbsp;<a href="#" onclick="page(2)">下一页</a></div>
+    </article>
+    <a href="#" class="cd-top">Top</a>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            (function(){
+                window.scrollReveal = new scrollReveal({reset: true});
+            })();
+        };
+    </script>
+{% endblock %}

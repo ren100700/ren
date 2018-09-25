@@ -1,0 +1,68 @@
+{% extends 'base_main.html' %}
+{% block content %}
+  <article>
+    <aside class="l_box">
+      <div class="about_me">
+        <h2>关于我</h2>
+        <ul>
+          <i><img src=""></i>
+          <p></p>
+        </ul>
+      </div>
+      <div class="wdxc">
+        <h2>我的相册</h2>
+        <ul>
+          <li><a href="/"><img src="/"></a></li>
+          <li><a href="/"><img src="/"></a></li>
+          <li><a href="/"><img src="/"></a></li>
+          <li><a href="/"><img src="/"></a></li>
+          <li><a href="/"><img src="/"></a></li>
+          <li><a href="/"><img src="/"></a></li>
+        </ul>
+      </div>
+       <div class="search">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="搜索" type="submit">
+        </form>
+      </div>
+    </aside>
+    <main class="r_box">
+  <div class="gbook">
+        <div class="fb">
+          <ul>
+            <p class="fbtime"><span> 2018-07-09 </span> 迪丽热巴</p>
+            <p class="fbinfo">加油吖</p>
+          </ul>
+        </div>
+        <div class="hf">
+          <ul>
+            <p class="zzhf"><font color="#FF0000">站长回复:</font>感谢第一条留言的支持！：）</p>
+          </ul>
+        </div>
+        <div class="gbox">
+          <form action="../../enews/index.php" method="post" name="form1" id="form1">
+            <p> <strong>来说点儿什么吧...</strong></p>
+            <p><span> 您的姓名:</span>
+              <input name="name" type="text" id="name">
+              *</p>
+            <p><span>联系邮箱:</span>
+              <input name="email" type="text" id="email">
+              *</p>
+            <p><span class="tnr">留言内容:</span>
+              <textarea name="lytext" cols="60" rows="12" id="lytext"></textarea>
+            </p>
+            <p>
+              <input type="submit" name="Submit3" value="提交">
+              <input name="enews" type="hidden" id="enews" value="AddGbook">
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </article>
+  <a href="#" class="cd-top">Top</a>
+{% endblock %}
